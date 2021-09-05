@@ -14,7 +14,7 @@ Az alábbi teszt eseteket kell kidolgozzad:
 
 * Helyesen betöltődik az applikáció:
     * Megjelenik az ABCs műveleti tábla, pontosan ezzel a szöveggel:
-      * !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+      * !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~
     
 * Megjelenik egy érvényes művelet:
     * `chr` megző egy a fenti ABCs műveleti táblából származó karaktert tartalmaz
