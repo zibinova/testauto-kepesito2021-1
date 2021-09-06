@@ -45,7 +45,7 @@ def test_initial_state():
 
 
 def test_valid():
-    """Számítás helyes, megfelelő bemenettel
+    """TC2: Számítás helyes, megfelelő bemenettel
     a: 2
     b: 3
     c: 10"""
@@ -56,7 +56,7 @@ def test_valid():
 
 
 def test_invalid():
-    """Üres kitöltés:
+    """TC3: Üres kitöltés:
     a: <üres>
     b: <üres>
     c: NaN"""
@@ -65,6 +65,10 @@ def test_invalid():
     calc_button.click()
     assert result.text == ref_data[2]
 
+
 # test_initial_state()
 # test_valid()
 # test_invalid()
+
+
+driver.close()

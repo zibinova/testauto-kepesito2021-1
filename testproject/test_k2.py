@@ -46,3 +46,6 @@ def test_guess():
         assert result.text == "Correct!"
     else:
         assert result.text == "Incorrect!"
+
+
+driver.close()
