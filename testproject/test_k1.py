@@ -8,18 +8,23 @@ URL = "https://ambitious-sky-0d3acbd03.azurestaticapps.net/k1.html "
 driver.get(URL)
 
 # Lokátorok:
+
 a_field = driver.find_element_by_id("a")
 b_field = driver.find_element_by_id("b")
 calc_button = driver.find_element_by_id("submit")
 result = driver.find_element_by_id("result")
 result_text = driver.find_element_by_id("result").text
 result_block = driver.find_element_by_id("results")
+
 # Test data:
 
 test_data_valid = [2, 3]
 test_data_invalid = ["", ""]
 
 ref_data = ["False", "10", "NaN"]
+
+
+# Számítás kódja:
 
 
 def pit_calc(a, b):
@@ -59,7 +64,6 @@ def test_invalid():
     pit_calc(test_data_invalid[0], test_data_invalid[1])
     calc_button.click()
     assert result.text == ref_data[2]
-
 
 # test_initial_state()
 # test_valid()
